@@ -1,0 +1,22 @@
+{
+  "insurance_details": {
+    "email_id": "gokul@example.com",
+    "driver_age": 35,
+    "vehicle_registration_number": "AB12 CDE",
+    "vehicle_manufacturer_name": "Tesla",
+    "vehicle_model": "Model 3",
+    "vehicle_year": 2021,
+    "type_of_fuel": "Electric",
+    "type_of_Cover_needed": "comprehensive",
+    "No_Claim_bonus_years": 5,
+    "Voluntary_Excess": 500.0,
+    "current_insurance_provider": "Admiral",
+    "policy_id": "POL-123",
+    "policy_type": "car",
+    "policy_start_date": "2025-11-23",
+    "policy_end_date": "2026-11-22"
+  },
+  "user_preferences": "I need courtesy_car and the legal_cover with max budget £380",
+  "start_date": "2025-11-23",
+  "iterations": 20
+}

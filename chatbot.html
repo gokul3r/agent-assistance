@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alfie Quote Chat</title>
+  <style>
+    :root {
+      --bg: #050910;
+      --panel: #0b1220;
+      --muted: #8ba0b5;
+      --text: #e6edf5;
+      --accent: #4ade80;
+      --accent-2: #22d3ee;
+      --card: #0f172a;
+      --border: rgba(255, 255, 255, 0.08);
+      --danger: #f87171;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(circle at 20% 20%, rgba(34, 211, 238, 0.08), transparent 25%),
+                  radial-gradient(circle at 80% 0%, rgba(74, 222, 128, 0.08), transparent 22%),
+                  var(--bg);
+      color: var(--text);
+      font-family: "Space Grotesk", "Segoe UI", system-ui, -apple-system, sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 28px 16px 54px;
+    }
+    .frame {
+      width: min(1200px, 100%);
+      background: linear-gradient(160deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.01));
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 26px 80px rgba(0, 0, 0, 0.45);
+      backdrop-filter: blur(5px);
+    }
+    header {
+      padding: 18px 22px 12px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(90deg, rgba(74, 222, 128, 0.08), rgba(34, 211, 238, 0.06));
+    }
+    h1 {
+      margin: 0;
+      font-size: 22px;
+      letter-spacing: -0.02em;
+    }
+    .lead {
+      margin: 4px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+    .layout {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 0;
+    }
+    @media (max-width: 960px) {
+      .layout { grid-template-columns: 1fr; }
+    }
+    .chat {
+      display: flex;
+      flex-direction: column;
+      height: 72vh;
+      background: var(--panel);
+      border-right: 1px solid var(--border);
+    }
+    @media (max-width: 960px) { .chat { border-right: none; height: 68vh; } }
+    .stream {
+      flex: 1;
+      overflow-y: auto;
+      padding: 18px 18px 8px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .bubble {
+      padding: 12px 14px;
+      border-radius: 14px;
+      max-width: 85%;
+      line-height: 1.5;
+      border: 1px solid var(--border);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, 0.18);
+    }
+    .bubble.user {
+      background: linear-gradient(120deg, rgba(74, 222, 128, 0.18), rgba(74, 222, 128, 0.12));
+      align-self: flex-end;
+      border-color: rgba(74, 222, 128, 0.35);
+    }
+    .bubble.bot {
+      background: #0c1629;
+      align-self: flex-start;
+    }
+    .input-bar {
+      display: flex;
+      gap: 10px;
+      padding: 12px 14px;
+      border-top: 1px solid var(--border);
+      background: rgba(10, 16, 27, 0.9);
+    }
+    .input-bar input {
+      flex: 1;
+      padding: 12px 14px;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: #0b1220;
+      color: var(--text);
+      font-size: 15px;
+      outline: none;
+    }
+    button {
+      border: none;
+      border-radius: 12px;
+      padding: 12px 16px;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #03131a;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 16px 30px rgba(34, 211, 238, 0.28);
+      transition: transform 0.08s ease, filter 0.12s ease;
+    }
+    button:active { transform: translateY(1px); filter: brightness(0.96); }
+    button:disabled { opacity: 0.6; cursor: not-allowed; box-shadow: none; transform: none; }
+    .panel {
+      background: var(--panel);
+      padding: 18px;
+    }
+    .panel h3 { margin: 0 0 8px; }
+    .quote-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+    }
+    .quote {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 12px;
+      display: grid;
+      gap: 6px;
+    }
+    .quote .price { font-size: 20px; font-weight: 700; color: var(--accent); }
+    .quote .meta { color: var(--muted); font-size: 13px; }
+    .pill {
+      display: inline-block;
+      padding: 2px 9px;
+      border-radius: 999px;
+      background: rgba(34, 211, 238, 0.12);
+      color: var(--text);
+      border: 1px solid rgba(34, 211, 238, 0.3);
+      font-size: 12px;
+      margin-right: 6px;
+    }
+    .status {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 6px;
+    }
+    .error { color: var(--danger); }
+    small { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <div class="frame">
+    <header>
+      <h1>Alfie Quote Chat</h1>
+      <p class="lead">Ask for car insurance quotes and we will send your saved profile to the AutoAnnie agent.</p>
+    </header>
+    <div class="layout">
+      <div class="chat">
+        <div id="stream" class="stream"></div>
+        <div class="input-bar">
+          <input id="input" placeholder="Try: Get me quotes for my Toyota" />
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+      <aside class="panel">
+        <h3>Top Quotes <small id="quoteCount"></small></h3>
+        <div id="quotes" class="quote-grid"></div>
+        <div id="status" class="status"></div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    const ENDPOINT = 'https://alfie-657860957693.europe-west4.run.app/complete-analysis';
+    const TEMPLATE_PATH = './InsureThat/auto_annie/ai_agent/sample_request_complete.json';
+
+    const stream = document.getElementById('stream');
+    const input = document.getElementById('input');
+    const sendBtn = document.getElementById('sendBtn');
+    const quotesEl = document.getElementById('quotes');
+    const statusEl = document.getElementById('status');
+    const quoteCount = document.getElementById('quoteCount');
+
+    let basePayload = null;
+
+    function appendMessage(text, role = 'bot') {
+      const bubble = document.createElement('div');
+      bubble.className = `bubble ${role}`;
+      bubble.innerText = text;
+      stream.appendChild(bubble);
+      stream.scrollTop = stream.scrollHeight;
+    }
+
+    async function loadTemplate() {
+      try {
+        const res = await fetch(TEMPLATE_PATH);
+        basePayload = await res.json();
+        appendMessage('Template loaded. Ask for a quote to send it to the agent.', 'bot');
+      } catch (err) {
+        appendMessage('Unable to load the saved request template.', 'bot');
+        statusEl.textContent = 'Load error: ' + err.message;
+      }
+    }
+
+    function buildPayload(message) {
+      const cloned = JSON.parse(JSON.stringify(basePayload || {}));
+      cloned.user_preferences = message || cloned.user_preferences || 'Find me car quotes';
+      cloned.conversation_history = [{ role: 'user', content: message }];
+      return cloned;
+    }
+
+    function pickPrice(q) {
+      const pathPrice = q.price_analysis && q.price_analysis.quote_price;
+      const fallback = q.original_quote?.output?.policy_cost;
+      return typeof pathPrice === 'number' ? pathPrice : (typeof fallback === 'number' ? fallback : null);
+    }
+
+    // JS port of the provided Python helper: pick top 3 by alfie_touch_score (desc)
+    function getTopThreeQuotes(data) {
+      const quotes = (data?.quotes_with_insights || []).slice();
+      const sorted = quotes.sort((a, b) => {
+        const aScore = typeof a.alfie_touch_score === 'number' ? a.alfie_touch_score : 0;
+        const bScore = typeof b.alfie_touch_score === 'number' ? b.alfie_touch_score : 0;
+        return bScore - aScore;
+      });
+      return sorted.slice(0, 3).map(q => ({
+        insurer_name: q.insurer_name || 'Unknown',
+        alfie_touch_score: q.alfie_touch_score,
+        trustpilot_rating: q.trust_pilot_context?.rating,
+        alfie_message: q.alfie_message || 'No agent message provided',
+        price: pickPrice(q),
+        features: {
+          features_matched: q.features_matching_requirements?.matched_required || [],
+          features_missing: q.features_matching_requirements?.missing_required || [],
+          available_features: q.available_features || []
+        }
+      }));
+    }
+
+    function renderQuotes(list) {
+      quotesEl.innerHTML = '';
+      if (!list.length) {
+        quoteCount.textContent = '(none yet)';
+        return;
+      }
+      quoteCount.textContent = `(${list.length} shown)`;
+      list.forEach(q => {
+        const price = q.price;
+        const card = document.createElement('div');
+        card.className = 'quote';
+        const features = (q.features?.available_features || [])
+          .map(f => f.replace('_included', '').replace(/_/g, ' '))
+          .slice(0, 4);
+        const matched = q.features?.features_matched || [];
+        const missing = q.features?.features_missing || [];
+        card.innerHTML = `
+          <div class="price">£${price != null ? price.toFixed(2) : '—'}</div>
+          <div><strong>${q.insurer_name || 'Unknown'}</strong></div>
+          <div class="meta">Alfie touch score: ${q.alfie_touch_score ?? 'n/a'} • Trustpilot: ${q.trustpilot_rating ?? 'n/a'}</div>
+          <div class="meta">Message: ${q.alfie_message || '—'}</div>
+          <div>${features.map(f => `<span class="pill">${f}</span>`).join('')}</div>
+          <div class="meta">Matched: ${matched.join(', ') || '—'}</div>
+          <div class="meta">Missing: ${missing.join(', ') || '—'}</div>
+        `;
+        quotesEl.appendChild(card);
+      });
+    }
+
+    async function sendMessage() {
+      const message = input.value.trim() || 'Get me quotes for my Toyota';
+      if (!basePayload) {
+        appendMessage('Still loading template...', 'bot');
+        return;
+      }
+      appendMessage(message, 'user');
+      input.value = '';
+      sendBtn.disabled = true;
+      appendMessage('Searching quotes with AutoAnnie...', 'bot');
+      statusEl.textContent = 'Calling Cloud Run...';
+
+      try {
+        const payload = buildPayload(message);
+        const res = await fetch(ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        if (!res.ok) throw new Error('API returned ' + res.status);
+        const data = await res.json();
+        const best = getTopThreeQuotes(data);
+        if (!best.length) {
+          appendMessage('No quotes matched yet. Try relaxing the request.', 'bot');
+          renderQuotes([]);
+          statusEl.textContent = 'No matches returned';
+        } else {
+          const summary = best.map((q, i) => {
+            return `${i + 1}. ${q.insurer_name} — score ${q.alfie_touch_score ?? 'n/a'} (Trustpilot ${q.trustpilot_rating ?? 'n/a'})`;
+          }).join('\n');
+          appendMessage('Here are the top options:\n' + summary, 'bot');
+          renderQuotes(best);
+          statusEl.textContent = 'Showing top 3 by Alfie touch score';
+        }
+      } catch (err) {
+        appendMessage('Error talking to the agent: ' + err.message, 'bot');
+        statusEl.textContent = 'Error: ' + err.message;
+        statusEl.classList.add('error');
+      } finally {
+        sendBtn.disabled = false;
+      }
+    }
+
+    sendBtn.addEventListener('click', sendMessage);
+    input.addEventListener('keydown', (e) => { if (e.key === 'Enter') sendMessage(); });
+
+    loadTemplate();
+  </script>
+</body>
+</html>

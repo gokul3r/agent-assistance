@@ -1,0 +1,963 @@
+﻿{
+    "parsed_preferences":  {
+                               "budget":  500.0,
+                               "budget_flexibility":  "strict",
+                               "required_features":  [
+                                                         "legal_cover_included",
+                                                         "courtesy_car_included"
+                                                     ],
+                               "desired_features":  [
+
+                                                    ],
+                               "priorities":  [
+
+                                              ],
+                               "provider_preferences":  {
+
+                                                        },
+                               "raw_text":  "I need courtesy car and legal cover with maximum budget Â£500."
+                           },
+    "quotes_with_insights":  [
+                                 {
+                                     "insurer_name":  "Admiral",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_Admiral_65372",
+                                                                           "insurer_name":  "Admiral",
+                                                                           "policy_cost":  404.33,
+                                                                           "pre_discount_cost":  404.33,
+                                                                           "post_discount_cost":  404.33,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "yes",
+                                                                           "windshield_cover_included":  "no",
+                                                                           "courtesy_car_included":  "yes",
+                                                                           "breakdown_cover_included":  "yes",
+                                                                           "personal_Accident_cover_included":  "yes",
+                                                                           "european_cover_included":  "yes",
+                                                                           "no_claim_bonus_protection_included":  "no"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "legal_cover_included",
+                                                                "courtesy_car_included",
+                                                                "breakdown_cover_included",
+                                                                "personal_Accident_cover_included",
+                                                                "european_cover_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+                                                                                                     "courtesy_car_included",
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "missing_required":  [
+
+                                                                                                 ],
+                                                                            "justification":  "Matched 2 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  404.33,
+                                                            "budget":  500.0,
+                                                            "difference":  95.67000000000002,
+                                                            "within_budget":  true,
+                                                            "competitiveness":  "within_budget",
+                                                            "justification":  "Within your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  4.5,
+                                                                 "reviews_count":  139886,
+                                                                 "pros":  [
+                                                                              "Competitive prices, often beating comparison sites",
+                                                                              "User-friendly website and easy navigation",
+                                                                              "Excellent customer service with real human agents",
+                                                                              "MultiCar/MultiCover discounts available"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Renewal price increases despite loyalty",
+                                                                              "Long telephone wait times",
+                                                                              "Claims handling delays with poor communication",
+                                                                              "Automatic renewal concerns"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  4.5,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  4.5,
+                                                             "defacto_rating_contribution":  4.4,
+                                                             "features_match_percentage":  100,
+                                                             "price_competitiveness":  4.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "Admiral delivers all 2 of your required features. at Â£404.33, staying Â£95.67 within your Â£500 budget. Their 4.5/5 Trust Pilot rating from 139,886 reviews places them among top-rated providers.",
+                                     "trade_offs":  [
+                                                        "Customer concern: Renewal price increases despite loyalty"
+                                                    ]
+                                 },
+                                 {
+                                     "insurer_name":  "Ventura",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_Ventura_10490",
+                                                                           "insurer_name":  "Ventura",
+                                                                           "policy_cost":  428.86,
+                                                                           "pre_discount_cost":  428.86,
+                                                                           "post_discount_cost":  428.86,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "yes",
+                                                                           "windshield_cover_included":  "yes",
+                                                                           "courtesy_car_included":  "yes",
+                                                                           "breakdown_cover_included":  "no",
+                                                                           "personal_Accident_cover_included":  "no",
+                                                                           "european_cover_included":  "no",
+                                                                           "no_claim_bonus_protection_included":  "yes"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "legal_cover_included",
+                                                                "windshield_cover_included",
+                                                                "courtesy_car_included",
+                                                                "no_claim_bonus_protection_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+                                                                                                     "courtesy_car_included",
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "missing_required":  [
+
+                                                                                                 ],
+                                                                            "justification":  "Matched 2 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  428.86,
+                                                            "budget":  500.0,
+                                                            "difference":  71.13999999999999,
+                                                            "within_budget":  true,
+                                                            "competitiveness":  "within_budget",
+                                                            "justification":  "Within your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  4.5,
+                                                                 "reviews_count":  81768,
+                                                                 "pros":  [
+                                                                              "Excellent customer service and efficient claims handling with quick settlements",
+                                                                              "Competitive pricing with good comprehensive cover",
+                                                                              "Easy-to-use website with quick online processes and helpful staff"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Renewal price increases despite no claims history",
+                                                                              "Courtesy car not included as standard (must be added)",
+                                                                              "Sometimes advised to cancel and re-purchase online for better price (incurs Â£40 cancellation fee)"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  4.2,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  4.5,
+                                                             "defacto_rating_contribution":  3.6,
+                                                             "features_match_percentage":  100,
+                                                             "price_competitiveness":  4.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "Ventura delivers all 2 of your required features. at Â£428.86, staying Â£71.14 within your Â£500 budget. Their 4.5/5 Trust Pilot rating from 81,768 reviews places them among top-rated providers.",
+                                     "trade_offs":  [
+                                                        "Customer concern: Renewal price increases despite no claims history"
+                                                    ]
+                                 },
+                                 {
+                                     "insurer_name":  "PAXA",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_PAXA_69393",
+                                                                           "insurer_name":  "PAXA",
+                                                                           "policy_cost":  398.1,
+                                                                           "pre_discount_cost":  398.1,
+                                                                           "post_discount_cost":  398.1,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "yes",
+                                                                           "windshield_cover_included":  "no",
+                                                                           "courtesy_car_included":  "no",
+                                                                           "breakdown_cover_included":  "yes",
+                                                                           "personal_Accident_cover_included":  "yes",
+                                                                           "european_cover_included":  "yes",
+                                                                           "no_claim_bonus_protection_included":  "yes"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "legal_cover_included",
+                                                                "breakdown_cover_included",
+                                                                "personal_Accident_cover_included",
+                                                                "european_cover_included",
+                                                                "no_claim_bonus_protection_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "missing_required":  [
+                                                                                                     "courtesy_car_included"
+                                                                                                 ],
+                                                                            "justification":  "Matched 1 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  398.1,
+                                                            "budget":  500.0,
+                                                            "difference":  101.89999999999998,
+                                                            "within_budget":  true,
+                                                            "competitiveness":  "within_budget",
+                                                            "justification":  "Within your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  4.4,
+                                                                 "reviews_count":  28261,
+                                                                 "pros":  [
+                                                                              "Competitive prices and comprehensive coverage",
+                                                                              "User-friendly website, easy to navigate",
+                                                                              "Helpful and patient staff",
+                                                                              "Ability to speak with real humans"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Some negative reviews about claims handling",
+                                                                              "Occasional issues with auto-renewal",
+                                                                              "Mixed experiences with approved repairers",
+                                                                              "Some customers report premium increases"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  4.1,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  4.4,
+                                                             "defacto_rating_contribution":  4.3,
+                                                             "features_match_percentage":  50,
+                                                             "price_competitiveness":  5.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "PAXA provides 1 of 2 required features. at Â£398.10, staying Â£101.90 within your Â£500 budget. With 4.4/5 Trust Pilot rating from 28,261 reviews, they maintain above-average reputation.",
+                                     "trade_offs":  [
+                                                        "Missing required features",
+                                                        "Customer concern: Some negative reviews about claims handling"
+                                                    ]
+                                 },
+                                 {
+                                     "insurer_name":  "HestingsDrive",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_HestingsDrive_56805",
+                                                                           "insurer_name":  "HestingsDrive",
+                                                                           "policy_cost":  397.47,
+                                                                           "pre_discount_cost":  397.47,
+                                                                           "post_discount_cost":  397.47,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "yes",
+                                                                           "windshield_cover_included":  "no",
+                                                                           "courtesy_car_included":  "no",
+                                                                           "breakdown_cover_included":  "yes",
+                                                                           "personal_Accident_cover_included":  "no",
+                                                                           "european_cover_included":  "no",
+                                                                           "no_claim_bonus_protection_included":  "yes"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "legal_cover_included",
+                                                                "breakdown_cover_included",
+                                                                "no_claim_bonus_protection_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "missing_required":  [
+                                                                                                     "courtesy_car_included"
+                                                                                                 ],
+                                                                            "justification":  "Matched 1 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  397.47,
+                                                            "budget":  500.0,
+                                                            "difference":  102.52999999999997,
+                                                            "within_budget":  true,
+                                                            "competitiveness":  "within_budget",
+                                                            "justification":  "Within your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  4.3,
+                                                                 "reviews_count":  174767,
+                                                                 "pros":  [
+                                                                              "Very competitive pricing",
+                                                                              "Excellent mobile app (YouDrive)",
+                                                                              "Easy online process",
+                                                                              "Helpful customer service"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Black box can be intrusive/glitchy",
+                                                                              "Website navigation issues reported",
+                                                                              "Non-refundable arrangement fees",
+                                                                              "Some difficulty removing extras"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  4.0,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  4.3,
+                                                             "defacto_rating_contribution":  4.2,
+                                                             "features_match_percentage":  50,
+                                                             "price_competitiveness":  5.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "HestingsDrive provides 1 of 2 required features. at Â£397.47, staying Â£102.53 within your Â£500 budget. With 4.3/5 Trust Pilot rating from 174,767 reviews, they maintain above-average reputation.",
+                                     "trade_offs":  [
+                                                        "Missing required features",
+                                                        "Customer concern: Black box can be intrusive/glitchy"
+                                                    ]
+                                 },
+                                 {
+                                     "insurer_name":  "Baviva",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_Baviva_41135",
+                                                                           "insurer_name":  "Baviva",
+                                                                           "policy_cost":  384.99,
+                                                                           "pre_discount_cost":  384.99,
+                                                                           "post_discount_cost":  384.99,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "no",
+                                                                           "windshield_cover_included":  "yes",
+                                                                           "courtesy_car_included":  "no",
+                                                                           "breakdown_cover_included":  "yes",
+                                                                           "personal_Accident_cover_included":  "yes",
+                                                                           "european_cover_included":  "yes",
+                                                                           "no_claim_bonus_protection_included":  "yes"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "windshield_cover_included",
+                                                                "breakdown_cover_included",
+                                                                "personal_Accident_cover_included",
+                                                                "european_cover_included",
+                                                                "no_claim_bonus_protection_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+
+                                                                                                 ],
+                                                                            "missing_required":  [
+                                                                                                     "courtesy_car_included",
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "justification":  "Matched 0 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  384.99,
+                                                            "budget":  500.0,
+                                                            "difference":  115.00999999999999,
+                                                            "within_budget":  true,
+                                                            "competitiveness":  "within_budget",
+                                                            "justification":  "Within your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  4.3,
+                                                                 "reviews_count":  52558,
+                                                                 "pros":  [
+                                                                              "User-friendly website",
+                                                                              "Straightforward insurance process",
+                                                                              "Speed and efficiency of service",
+                                                                              "Easy to navigate and get quotes"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Difficulties contacting customer support",
+                                                                              "Issues making changes to policies online",
+                                                                              "Some communication problems during claims",
+                                                                              "Renewal price increases reported"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  3.5,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  4.3,
+                                                             "defacto_rating_contribution":  4.2,
+                                                             "features_match_percentage":  0,
+                                                             "price_competitiveness":  5.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "Baviva offers 5 features. at Â£384.99, staying Â£115.01 within your Â£500 budget. With 4.3/5 Trust Pilot rating from 52,558 reviews, they maintain above-average reputation.",
+                                     "trade_offs":  [
+                                                        "Missing required features",
+                                                        "Customer concern: Difficulties contacting customer support"
+                                                    ]
+                                 },
+                                 {
+                                     "insurer_name":  "Churchwell",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_Churchwell_80514",
+                                                                           "insurer_name":  "Churchwell",
+                                                                           "policy_cost":  400.76,
+                                                                           "pre_discount_cost":  400.76,
+                                                                           "post_discount_cost":  400.76,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "no",
+                                                                           "windshield_cover_included":  "yes",
+                                                                           "courtesy_car_included":  "no",
+                                                                           "breakdown_cover_included":  "yes",
+                                                                           "personal_Accident_cover_included":  "yes",
+                                                                           "european_cover_included":  "yes",
+                                                                           "no_claim_bonus_protection_included":  "yes"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "windshield_cover_included",
+                                                                "breakdown_cover_included",
+                                                                "personal_Accident_cover_included",
+                                                                "european_cover_included",
+                                                                "no_claim_bonus_protection_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+
+                                                                                                 ],
+                                                                            "missing_required":  [
+                                                                                                     "courtesy_car_included",
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "justification":  "Matched 0 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  400.76,
+                                                            "budget":  500.0,
+                                                            "difference":  99.24000000000001,
+                                                            "within_budget":  true,
+                                                            "competitiveness":  "within_budget",
+                                                            "justification":  "Within your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  4.4,
+                                                                 "reviews_count":  26925,
+                                                                 "pros":  [
+                                                                              "Efficient claims handling",
+                                                                              "Straightforward online platform",
+                                                                              "Helpful and professional staff",
+                                                                              "Competitive multi-car discounts"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Renewal price increases",
+                                                                              "Some difficulty reaching customer support",
+                                                                              "Call center location concerns",
+                                                                              "Issues with no-claims bonus documentation"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  3.3,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  4.4,
+                                                             "defacto_rating_contribution":  4.0,
+                                                             "features_match_percentage":  0,
+                                                             "price_competitiveness":  4.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "Churchwell offers 5 features. at Â£400.76, staying Â£99.24 within your Â£500 budget. With 4.4/5 Trust Pilot rating from 26,925 reviews, they maintain above-average reputation.",
+                                     "trade_offs":  [
+                                                        "Missing required features",
+                                                        "Customer concern: Renewal price increases"
+                                                    ]
+                                 },
+                                 {
+                                     "insurer_name":  "Zorich",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_Zorich_46383",
+                                                                           "insurer_name":  "Zorich",
+                                                                           "policy_cost":  388.06,
+                                                                           "pre_discount_cost":  388.06,
+                                                                           "post_discount_cost":  388.06,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "no",
+                                                                           "windshield_cover_included":  "yes",
+                                                                           "courtesy_car_included":  "no",
+                                                                           "breakdown_cover_included":  "no",
+                                                                           "personal_Accident_cover_included":  "yes",
+                                                                           "european_cover_included":  "yes",
+                                                                           "no_claim_bonus_protection_included":  "no"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "windshield_cover_included",
+                                                                "personal_Accident_cover_included",
+                                                                "european_cover_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+
+                                                                                                 ],
+                                                                            "missing_required":  [
+                                                                                                     "courtesy_car_included",
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "justification":  "Matched 0 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  388.06,
+                                                            "budget":  500.0,
+                                                            "difference":  111.94,
+                                                            "within_budget":  true,
+                                                            "competitiveness":  "within_budget",
+                                                            "justification":  "Within your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  3.7,
+                                                                 "reviews_count":  3304,
+                                                                 "pros":  [
+                                                                              "Some helpful and professional staff",
+                                                                              "Prompt service in certain cases",
+                                                                              "Efficient when things go smoothly",
+                                                                              "Comprehensive policy options"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Poor claims handling and delays",
+                                                                              "Difficult to contact customer service",
+                                                                              "Communication issues and unresponsiveness",
+                                                                              "Low settlement offers reported"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  3.3,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  3.7,
+                                                             "defacto_rating_contribution":  3.9,
+                                                             "features_match_percentage":  0,
+                                                             "price_competitiveness":  5.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "Zorich offers 3 features. at Â£388.06, staying Â£111.94 within your Â£500 budget. Their 3.7/5 Trust Pilot rating from 3,304 reviews sits below the 4.2/5 average.",
+                                     "trade_offs":  [
+                                                        "Missing required features",
+                                                        "Customer concern: Poor claims handling and delays"
+                                                    ]
+                                 },
+                                 {
+                                     "insurer_name":  "IndirectLane",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_IndirectLane_23532",
+                                                                           "insurer_name":  "IndirectLane",
+                                                                           "policy_cost":  419.77,
+                                                                           "pre_discount_cost":  419.77,
+                                                                           "post_discount_cost":  419.77,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "no",
+                                                                           "windshield_cover_included":  "yes",
+                                                                           "courtesy_car_included":  "no",
+                                                                           "breakdown_cover_included":  "yes",
+                                                                           "personal_Accident_cover_included":  "yes",
+                                                                           "european_cover_included":  "yes",
+                                                                           "no_claim_bonus_protection_included":  "no"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "windshield_cover_included",
+                                                                "breakdown_cover_included",
+                                                                "personal_Accident_cover_included",
+                                                                "european_cover_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+
+                                                                                                 ],
+                                                                            "missing_required":  [
+                                                                                                     "courtesy_car_included",
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "justification":  "Matched 0 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  419.77,
+                                                            "budget":  500.0,
+                                                            "difference":  80.23000000000002,
+                                                            "within_budget":  true,
+                                                            "competitiveness":  "within_budget",
+                                                            "justification":  "Within your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  4.1,
+                                                                 "reviews_count":  27403,
+                                                                 "pros":  [
+                                                                              "Competitive pricing for policies",
+                                                                              "Easy-to-use website",
+                                                                              "Professional service when reachable",
+                                                                              "UK-based call centers"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Long wait times on phone",
+                                                                              "High complaint levels with Ombudsman",
+                                                                              "Issues with approved repairers",
+                                                                              "Significant renewal price increases"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  3.2,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  4.1,
+                                                             "defacto_rating_contribution":  3.8,
+                                                             "features_match_percentage":  0,
+                                                             "price_competitiveness":  4.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "IndirectLane offers 4 features. at Â£419.77, staying Â£80.23 within your Â£500 budget. Their 4.1/5 Trust Pilot rating from 27,403 reviews sits below the 4.2/5 average.",
+                                     "trade_offs":  [
+                                                        "Missing required features",
+                                                        "Customer concern: Long wait times on phone"
+                                                    ]
+                                 },
+                                 {
+                                     "insurer_name":  "Assureon",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_Assureon_29540",
+                                                                           "insurer_name":  "Assureon",
+                                                                           "policy_cost":  403.96,
+                                                                           "pre_discount_cost":  403.96,
+                                                                           "post_discount_cost":  403.96,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "no",
+                                                                           "windshield_cover_included":  "no",
+                                                                           "courtesy_car_included":  "no",
+                                                                           "breakdown_cover_included":  "no",
+                                                                           "personal_Accident_cover_included":  "yes",
+                                                                           "european_cover_included":  "yes",
+                                                                           "no_claim_bonus_protection_included":  "yes"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "personal_Accident_cover_included",
+                                                                "european_cover_included",
+                                                                "no_claim_bonus_protection_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+
+                                                                                                 ],
+                                                                            "missing_required":  [
+                                                                                                     "courtesy_car_included",
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "justification":  "Matched 0 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  403.96,
+                                                            "budget":  500.0,
+                                                            "difference":  96.04000000000002,
+                                                            "within_budget":  true,
+                                                            "competitiveness":  "within_budget",
+                                                            "justification":  "Within your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  4.3,
+                                                                 "reviews_count":  64393,
+                                                                 "pros":  [
+                                                                              "Competitive pricing",
+                                                                              "Easy-to-use website",
+                                                                              "UK call centres"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Difficult to reach customer service by phone",
+                                                                              "Online chat-only communication frustrating",
+                                                                              "Mixed claims handling experiences",
+                                                                              "Higher cancellation fees than average"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  3.2,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  4.3,
+                                                             "defacto_rating_contribution":  3.7,
+                                                             "features_match_percentage":  0,
+                                                             "price_competitiveness":  4.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "Assureon offers 3 features. at Â£403.96, staying Â£96.04 within your Â£500 budget. With 4.3/5 Trust Pilot rating from 64,393 reviews, they maintain above-average reputation.",
+                                     "trade_offs":  [
+                                                        "Missing required features",
+                                                        "Customer concern: Difficult to reach customer service by phone"
+                                                    ]
+                                 },
+                                 {
+                                     "insurer_name":  "Soga",
+                                     "original_quote":  {
+                                                            "input":  {
+                                                                          "email_id":  "driver@example.com",
+                                                                          "driver_age":  34,
+                                                                          "vehicle_registration_number":  "AB12CDE",
+                                                                          "vehicle_manufacturer_name":  "Toyota",
+                                                                          "vehicle_model":  "Corolla",
+                                                                          "vehicle_year":  2019,
+                                                                          "type_of_fuel":  "Hybrid",
+                                                                          "type_of_Cover_needed":  "comprehensive",
+                                                                          "No_Claim_bonus_years":  5,
+                                                                          "Voluntary_Excess":  250.0,
+                                                                          "current_insurance_provider":  "Admiral",
+                                                                          "policy_id":  "POL-9001",
+                                                                          "policy_type":  "car"
+                                                                      },
+                                                            "output":  {
+                                                                           "quote_reference_number":  "Q_Soga_88457",
+                                                                           "insurer_name":  "Soga",
+                                                                           "policy_cost":  821.74,
+                                                                           "pre_discount_cost":  821.74,
+                                                                           "post_discount_cost":  821.74,
+                                                                           "type_of_policy":  "comprehensive",
+                                                                           "total_excess_amount":  250.0,
+                                                                           "discount_applied":  "no",
+                                                                           "legal_cover_included":  "no",
+                                                                           "windshield_cover_included":  "yes",
+                                                                           "courtesy_car_included":  "no",
+                                                                           "breakdown_cover_included":  "no",
+                                                                           "personal_Accident_cover_included":  "yes",
+                                                                           "european_cover_included":  "no",
+                                                                           "no_claim_bonus_protection_included":  "no"
+                                                                       }
+                                                        },
+                                     "available_features":  [
+                                                                "windshield_cover_included",
+                                                                "personal_Accident_cover_included"
+                                                            ],
+                                     "features_matching_requirements":  {
+                                                                            "matched_required":  [
+
+                                                                                                 ],
+                                                                            "missing_required":  [
+                                                                                                     "courtesy_car_included",
+                                                                                                     "legal_cover_included"
+                                                                                                 ],
+                                                                            "justification":  "Matched 0 of 2 required features"
+                                                                        },
+                                     "price_analysis":  {
+                                                            "quote_price":  821.74,
+                                                            "budget":  500.0,
+                                                            "difference":  -321.74,
+                                                            "within_budget":  false,
+                                                            "competitiveness":  "over_budget",
+                                                            "justification":  "Exceeds your Â£500 budget"
+                                                        },
+                                     "trust_pilot_context":  {
+                                                                 "rating":  4.0,
+                                                                 "reviews_count":  42084,
+                                                                 "pros":  [
+                                                                              "Competitive pricing for over 50s",
+                                                                              "3-year fixed price option",
+                                                                              "Knowledgeable and helpful advisors",
+                                                                              "Easy-to-use website"
+                                                                          ],
+                                                                 "cons":  [
+                                                                              "Long phone wait times",
+                                                                              "Difficulties with claims processing",
+                                                                              "Challenges cancelling policies",
+                                                                              "High renewal increases for some customers"
+                                                                          ]
+                                                             },
+                                     "alfie_touch_score":  2.4,
+                                     "score_breakdown":  {
+                                                             "trust_pilot_contribution":  4.0,
+                                                             "defacto_rating_contribution":  3.4,
+                                                             "features_match_percentage":  0,
+                                                             "price_competitiveness":  1.0,
+                                                             "calculation_note":  "30% Trust Pilot + 30% Defacto + 20% Features + 20% Price"
+                                                         },
+                                     "alfie_message":  "Soga offers 2 features. at Â£821.74, exceeding budget by Â£321.74. Their 4.0/5 Trust Pilot rating from 42,084 reviews sits below the 4.2/5 average.",
+                                     "trade_offs":  [
+                                                        "Missing required features",
+                                                        "Over budget",
+                                                        "Customer concern: Long phone wait times"
+                                                    ]
+                                 }
+                             ],
+    "alfie_summary":  {
+                          "total_quotes_analyzed":  10,
+                          "quotes_matching_budget":  9,
+                          "quotes_with_all_required_features":  2,
+                          "comparative_insights":  [
+                                                       "9 of 10 quotes within your Â£500 budget",
+                                                       "Average price: Â£444.80",
+                                                       "Average Trust Pilot: 4.2/5"
+                                                   ],
+                          "personalized_guidance":  "Based on your priorities: balanced approach recommended"
+                      },
+    "ranking_categories":  {
+                               "best_overall":  {
+                                                    "provider":  "Admiral",
+                                                    "score":  4.5,
+                                                    "price":  404.33,
+                                                    "features_count":  5,
+                                                    "reason":  "Highest Alfie Touch Score of 4.5/5"
+                                                },
+                               "best_value":  {
+                                                  "provider":  "Baviva",
+                                                  "price":  384.99,
+                                                  "cost_per_feature":  77.0,
+                                                  "reason":  "Best price-to-features ratio"
+                                              },
+                               "most_features":  {
+                                                     "provider":  "Admiral",
+                                                     "features_count":  5,
+                                                     "price":  404.33,
+                                                     "reason":  "Maximum coverage with 5 features"
+                                                 },
+                               "best_reputation":  {
+                                                       "provider":  "Admiral",
+                                                       "trust_pilot":  4.5,
+                                                       "defacto":  4.4,
+                                                       "reviews_count":  139886,
+                                                       "reason":  "Top reputation from 139,886 Trust Pilot reviews"
+                                                   }
+                           },
+    "data_source":  {
+                        "trust_pilot":  "Default (real Trust Pilot data)",
+                        "defacto":  "Default"
+                    },
+    "policy_context":  {
+                           "current_insurance_provider":  "Admiral",
+                           "policy_id":  "POL-9001",
+                           "policy_type":  "car"
+                       }
+}

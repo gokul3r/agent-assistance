@@ -1,0 +1,6 @@
+.venv/
+__pycache__/
+*.pyc
+
+# Python caches in nested folders
+**/__pycache__/
