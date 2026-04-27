@@ -4,7 +4,7 @@ from .schema import CancellationInput
 
 cancellation_agent = Agent(
     name="Policy_Cancellation_Assistant",
-    model="gemini-2.0-flash",
+    model="gemini-2.5-flash",
     description=(
         "Real-time next-best-action advisor for insurance contact center agents "
         "handling midterm policy cancellations. Strictly follows the 6-step "
