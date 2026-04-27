@@ -1,0 +1,11 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.env
+*.env
+test_cancellation_agent.py
+sample_cancellation_inputs.json
+*.ipynb
