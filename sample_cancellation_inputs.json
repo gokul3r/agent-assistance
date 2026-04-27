@@ -1,0 +1,62 @@
+[
+  {
+    "label": "Step 1 — Customer calls to cancel, intent just identified",
+    "payload": {
+      "customer_id": "C12345",
+      "customer_name": "John Smith",
+      "historical_context": "Customer has been with Admiral for 3 years. Last call Jan 2026 regarding renewal. Motor policy holder. No previous cancellations.",
+      "call_gist": "",
+      "current_transcript": "Agent: Thank you for calling Admiral Insurance, my name is Sarah, how can I help you today? Customer: Hi yes, I want to cancel my car insurance please. Agent: Of course, I can help with that. Can I take your policy number?"
+    }
+  },
+  {
+    "label": "Step 2 — Midterm cancellation confirmed, need payment method",
+    "payload": {
+      "customer_id": "C12345",
+      "customer_name": "John Smith",
+      "historical_context": "Customer has been with Admiral for 3 years. Motor policy holder.",
+      "call_gist": "Customer called to cancel motor insurance policy mid-term. Cancellation reason: Moving Abroad. Cancellation date confirmed as today 27/04/2026. Cancellation type: Midterm Cancellation.",
+      "current_transcript": "Agent: So I can confirm you'd like a midterm cancellation effective today as you're moving abroad. Is that correct? Customer: Yes that's right. Agent: Perfect, let me just check your payment details on our system."
+    }
+  },
+  {
+    "label": "Step 3 — Payment method identified as Direct Debit, check refund/payment",
+    "payload": {
+      "customer_id": "C12345",
+      "customer_name": "John Smith",
+      "historical_context": "Customer has been with Admiral for 3 years. Motor policy holder.",
+      "call_gist": "Midterm cancellation confirmed. Reason: Moving Abroad. Date: 27/04/2026. Payment method confirmed: Direct Debit. Direct Debit selected in system.",
+      "current_transcript": "Agent: I can see you're paying by Direct Debit, I've selected that in the system. Now let me check whether there is a refund due or a payment outstanding on your account. Customer: OK no problem."
+    }
+  },
+  {
+    "label": "Step 4 — Refund Due (Solo PH) confirmed, select cancellation timing",
+    "payload": {
+      "customer_id": "C12345",
+      "customer_name": "John Smith",
+      "historical_context": "Customer has been with Admiral for 3 years. Motor policy holder.",
+      "call_gist": "Midterm cancellation confirmed. Reason: Moving Abroad. Date: 27/04/2026. Payment: Direct Debit. Financial outcome: Refund Due (Solo PH) selected in system.",
+      "current_transcript": "Agent: I can see there is a refund due on your policy. I've selected that. Now I need to confirm the timing of your cancellation. Your policy started on the 1st of January 2026. Customer: Yes that's right."
+    }
+  },
+  {
+    "label": "Step 5 — After 14 Days selected, confirm details with customer",
+    "payload": {
+      "customer_id": "C12345",
+      "customer_name": "John Smith",
+      "historical_context": "Customer has been with Admiral for 3 years. Motor policy holder.",
+      "call_gist": "Midterm cancellation. Reason: Moving Abroad. Date: 27/04/2026. Payment: Direct Debit. Outcome: Refund Due (Solo PH). Timing: After 14 Days selected.",
+      "current_transcript": "Agent: As your policy started more than 14 days ago I've selected after 14 days. I now need to go through the cancellation details with you. Customer: Sure, go ahead."
+    }
+  },
+  {
+    "label": "Step 6 — Customer confirmed Yes, policy cancelled, explain documents",
+    "payload": {
+      "customer_id": "C12345",
+      "customer_name": "John Smith",
+      "historical_context": "Customer has been with Admiral for 3 years. Motor policy holder.",
+      "call_gist": "Midterm cancellation. Reason: Moving Abroad. Date: 27/04/2026. Payment: Direct Debit. Refund Due (Solo PH). After 14 Days. Cancellation details read to customer. Refund of £42.50 confirmed. Customer said YES to cancel. Policy now cancelled.",
+      "current_transcript": "Agent: So I can confirm the policy has been cancelled from today the 27th of April 2026 and a refund of £42.50 will be returned to your bank account within 10 days. Customer: Great thank you. Agent: Let me now explain how your documents will reach you."
+    }
+  }
+]
